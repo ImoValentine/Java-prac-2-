@@ -1,0 +1,25 @@
+public class BouncingBall{
+
+	public static void run(){
+
+	double height = 2.5;
+	double distance = 2.5;
+	while (height >= 0.5){
+		height = height * 0.6;
+		if (height <= 0.5){
+			break;
+		}
+		distance = distance + (2*height);
+	}
+
+	System.out.printf("Distance: %.2fm \n" ,distance);
+
+	}
+
+	public static void main(String args[]){
+
+	run();
+
+	}
+
+}
